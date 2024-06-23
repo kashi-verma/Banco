@@ -2,16 +2,14 @@ import RightSidebar from '@/components/RightSidebar';
 import TotalBalanceBox from '@/components/TotalBalanceBox';
 import HeaderBox from '@/components/ui/HeaderBox';
 
-// import RightSidebar from '@/components/RightSidebar';
-
-import { getAccount, getAccounts } from '@/lib/actions/bank.actions';
+ import { getAccount, getAccounts } from '@/lib/actions/bank.actions';
 import { getLoggedInUser } from '@/lib/actions/user.actions';
 
 const Home = () => {
   const loggedIn = {
     firstName: 'Kashish',
     lastName: 'Verma',
-    email: 'verma@gmail.com'
+    email: 'kashishverma@gmail.com'
   };
   // const currentPage = Number(page as string) || 1;
   // const loggedIn = await getLoggedInUs.currentBalance, account.Balance, account.
