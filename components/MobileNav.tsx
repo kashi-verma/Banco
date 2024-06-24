@@ -14,6 +14,7 @@ import {
   import { usePathname } from "next/navigation"
  
   import Image from "next/image"
+import Footer from "./Footer"
   
 
 const MobileNav = ({user}:
@@ -97,7 +98,7 @@ const MobileNav = ({user}:
 
                             </nav>
                         </SheetClose>
-                        FOOTER
+                        <Footer user={user} type="mobile"/>
                         </div>
                    
                     

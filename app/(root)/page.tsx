@@ -5,12 +5,8 @@ import HeaderBox from '@/components/ui/HeaderBox';
  import { getAccount, getAccounts } from '@/lib/actions/bank.actions';
 import { getLoggedInUser } from '@/lib/actions/user.actions';
 
-const Home = () => {
-  const loggedIn = {
-    firstName: 'Kashish',
-    lastName: 'Verma',
-    email: 'kashishverma@gmail.com'
-  };
+const Home = async() => {
+  const loggedIn =  await getLoggedInUser();
   // const currentPage = Number(page as string) || 1;
   // const loggedIn = await getLoggedInUs.currentBalance, account.Balance, account.
   // const accounts = await getAccounts({ 
@@ -31,7 +27,7 @@ const Home = () => {
           <HeaderBox 
             type="greeting"
             title="Welcome"
-            user={loggedIn?.firstName || 'Guest'}
+            user={loggedIn?.name || 'Guest'}
             subtext="Access and manage your account and transactions efficiently."
           />
             <TotalBalanceBox
