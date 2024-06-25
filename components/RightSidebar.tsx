@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import BankCard from './BankCard'
 import { countTransactionCategories } from '@/lib/utils'
-// import Category from './Category'
+import Category from './Category'
 
 const RightSidebar = ({ user, transactions, banks }: RightSidebarProps) => {
   const categories: CategoryCount[] = countTransactionCategories(transactions);
@@ -19,7 +19,7 @@ const RightSidebar = ({ user, transactions, banks }: RightSidebarProps) => {
 
           <div className="profile-details">
             <h1 className='profile-name'>
-              {user.name} 
+              {user.firstName} {user.lastName}
             </h1>
             <p className="profile-email">
               {user.email}
@@ -71,9 +71,9 @@ const RightSidebar = ({ user, transactions, banks }: RightSidebarProps) => {
           <h2 className="header-2">Top categories</h2>
 
           <div className='space-y-5'>
-            {/* {categories.map((category, index) => (
-              // <Category key={category.name} category={category} />
-            ))} */}
+            {categories.map((category, index) => (
+              <Category key={category.name} category={category} />
+            ))}
           </div>
         </div>
       </section>
