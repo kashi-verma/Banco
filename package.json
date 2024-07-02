@@ -20,7 +20,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "dwolla-v2": "^3.4.0",
-    "eslint-plugin-react-hooks": "^5.1.0-rc-8971381549-20240625",
+    "eslint-plugin-react-hooks": "^5.1.0-rc-e02baf6c92-20240627",
     "lucide-react": "^0.395.0",
     "next": "^14.2.4",
     "node-appwrite": "^13.0.0",

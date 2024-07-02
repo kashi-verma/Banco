@@ -8,14 +8,14 @@ import { authFormSchema } from '@/lib/utils'
 
 const formSchema = authFormSchema('sign-up')
 
-interface Custominput {
+interface CustomInput {
   control: Control<z.infer<typeof formSchema>>,
   name: FieldPath<z.infer<typeof formSchema>>,
   label: string,
   placeholder: string
 }
 
-const Custominput = ({ control, name, label, placeholder }: Custominput) => {
+const CustomInput = ({ control, name, label, placeholder }: CustomInput) => {
   return (
     <FormField
       control={control}
@@ -42,4 +42,4 @@ const Custominput = ({ control, name, label, placeholder }: Custominput) => {
   )
 }
 
-export default Custominput
+export default CustomInput

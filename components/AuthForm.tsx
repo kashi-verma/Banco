@@ -18,7 +18,7 @@ import {
   FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
-import CustomInput from './Custominput';
+import CustomInput from './CustomInput';
 import { authFormSchema } from '@/lib/utils';
 import { Loader2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
@@ -92,7 +92,7 @@ const AuthForm = ({ type }: { type: string }) => {
               height={34}
               alt="Horizon logo"
             />
-            <h1 className="text-26 font-ibm-plex-serif font-bold text-black-1">Banco</h1>
+            <h1 className="text-26 font-ibm-plex-serif font-bold text-black-1">Horizon</h1>
           </Link>
 
           <div className="flex flex-col gap-1 md:gap-3">

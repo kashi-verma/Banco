@@ -10,6 +10,7 @@ import { plaidClient } from '@/lib/plaid';
 import { revalidatePath } from "next/cache";
 import { addFundingSource, createDwollaCustomer } from "./dwolla.actions";
 
+
 const {
   APPWRITE_DATABASE_ID: DATABASE_ID,
   APPWRITE_USER_COLLECTION_ID: USER_COLLECTION_ID,
@@ -53,7 +54,7 @@ export const signIn = async ({ email, password }: signInProps) => {
 }
 
 export const signUp = async ({ password, ...userData }: SignUpParams) => {
-  const { email, firstName, lastName, } = userData;
+  const { email, firstName, lastName } = userData;
   
   let newUserAccount;
 

@@ -1,3 +1,4 @@
+
 import React, { useCallback, useEffect, useState } from 'react'
 import { Button } from './ui/button'
 import { PlaidLinkOnSuccess, PlaidLinkOptions, usePlaidLink } from 'react-plaid-link'
@@ -27,7 +28,7 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
     })
 
     router.push('/');
-  }, [user]);
+  }, [user])
   
   const config: PlaidLinkOptions = {
     token,
